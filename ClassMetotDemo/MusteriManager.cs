@@ -6,19 +6,20 @@ namespace ClassMetotDemo
 {
     class MusteriManager
     {
-        public  void Add(Musteri musteri)
+
+        public void Add(Musteri musteri)
         {
-            Console.WriteLine("Müşteri Eklendi : "+ musteri.MusteriAdi);
+            Console.WriteLine("Müşteri Eklendi: " + musteri.MusteriAdi + "\n");
         }
 
         public void Listing(Musteri musteri)
         {
-            Console.WriteLine(musteri.MusteriAdi);
+            Console.WriteLine("Müşteriler Listelendi:  " + musteri.MusteriAdi + "\n");
         }
 
         public void Delete(Musteri musteri)
         {
-            Console.WriteLine("Müşteri Silindi: "+ musteri.MusteriAdi);
+            Console.WriteLine("Müşteri Silindi: " + musteri.MusteriAdi + "\n");
         }
     }
 }

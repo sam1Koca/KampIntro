@@ -9,37 +9,34 @@ namespace ClassMetotDemo
             Musteri musteri1 = new Musteri();
 
             musteri1.MusteriId = 1;
-            musteri1.MusteriAdi = "Kazım";
-            musteri1.MusteriSoyadi = "Kar";
-            musteri1.MusteriBakiye = 1200;
-
+            musteri1.MusteriAdi = "Hannah Wasilyev";
+            musteri1.MusteriHesapNo = "1577965";
+            musteri1.MusteriHesapBakiyesi = 456.75;
 
             Musteri musteri2 = new Musteri();
 
-            musteri2.MusteriId = 1;
-            musteri2.MusteriAdi = "Sami";
-            musteri2.MusteriSoyadi = "Koca";
-            musteri2.MusteriBakiye = 500;
-
+            musteri2.MusteriId = 2;
+            musteri2.MusteriAdi = "Kevin Mittnick";
+            musteri2.MusteriHesapNo = "8887621";
+            musteri2.MusteriHesapBakiyesi = 4756.5;
 
             Musteri musteri3 = new Musteri();
 
-            musteri3.MusteriId = 1;
-            musteri3.MusteriAdi = "Kevin";
-            musteri3.MusteriSoyadi = "Mittnick";
-            musteri3.MusteriBakiye = 150;
+            musteri3.MusteriId = 3;
+            musteri3.MusteriAdi = "Emmiliano Astec";
+            musteri3.MusteriHesapNo = "4453420";
+            musteri3.MusteriHesapBakiyesi = 12.30;
 
-            Musteri[] Musteriler = new Musteri[] {musteri1, musteri2, musteri3 };
 
-            MusteriManager manager = new MusteriManager();
-            manager.Add(musteri1);
-            Console.WriteLine("\n ---------------------------------------------------- \n");
-            Console.WriteLine("********* Müşteriler Listelendi ********** \n"); 
-            manager.Listing(musteri1);
-            manager.Listing(musteri2);
-            manager.Listing(musteri3);
-            Console.WriteLine("-------------------------------------------------------------");
-            manager.Delete(musteri2);
+            MusteriManager musteriManager = new MusteriManager();
+
+            musteriManager.Add(musteri1);
+
+            musteriManager.Listing(musteri1);
+            musteriManager.Listing(musteri2);
+            musteriManager.Listing(musteri3);
+
+            musteriManager.Delete(musteri3);
 
         }
     }

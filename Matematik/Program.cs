@@ -6,12 +6,10 @@ namespace Matematik
     {
         static void Main(string[] args)
         {
-            DortIslem dortıslem = new DortIslem();
-            dortıslem.Topla(7, 1);
+            DortIslem dortIslem = new DortIslem();
+            dortIslem.Topla(23, 34);
 
-            dortıslem.Topla(6, 9);
-
-            
+            dortIslem.Topla(6, 9);
         }
     }
 }

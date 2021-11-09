@@ -4,13 +4,16 @@ using System.Text;
 
 namespace Metotlar
 {
+    // Bir classın sonunda manager-service vs. görürseniz bunlar bir operasyon yönetiyor demektir.
+    // Ortak kodlar classların içine yazılır genellikle
     class SepetManager
     {
-        // naming convention: İsimlendirme Kuralı -- Biryerde aşağıdaki gibi parantezli görürsen o metottur
-        // syntax
+        // naming convention - isimlendirme kuralı *Metotun baş harfini büyük yazdık
+        //syntax - yazım şekli
+        // Ekle() => Fonksiyonuna göre - Metota Parametre olarak ne ekleyeceğimizi göndermeliyiz
         public void Ekle(Urun urun)
         {
-            Console.WriteLine("Tebrikler. Sepete Eklendi! : " + urun.Adi);
+            Console.WriteLine("Tebrikler. Sepete Eklendi!" + urun.Adi);
         }
 
         public void Ekle2(string urunAdi, string aciklama, double fiyat, int stokAdedi)

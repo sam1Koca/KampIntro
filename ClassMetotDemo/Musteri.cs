@@ -8,8 +8,8 @@ namespace ClassMetotDemo
     {
         public int MusteriId { get; set; }
         public string MusteriAdi { get; set; }
-        public string MusteriSoyadi { get; set; }
-        public int MusteriBakiye { get; set; }
+        public string MusteriHesapNo { get; set; }
+        public double MusteriHesapBakiyesi { get; set; }
 
     }
 }
