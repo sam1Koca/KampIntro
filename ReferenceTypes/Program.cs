@@ -57,7 +57,7 @@ namespace ReferenceTypes
         }
     }
 
-    // person = kişi  -  Customer = müşteri
+    // person = kişi  ---  Customer = müşteri
     class Person
     {
         public int Id { get; set; }
