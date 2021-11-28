@@ -18,6 +18,7 @@ namespace GenericsIntro
         {
             T[] tempArray = items; // Geçici dizinin referansı items'ın referansı - Geçici olarak bir arkadaşa verdim sonra artırdım
                                    //Newlemek demek yeni ref. numarası yani eski verilerimin uçması - biz onu tempArrayda tutyoruz.
+
             items = new T[items.Length+1];
             for (int i = 0; i < tempArray.Length; i++)
             {
@@ -25,6 +26,16 @@ namespace GenericsIntro
             }
 
             items[items.Length - 1] = item;
+        }
+
+        public int Lenght
+        {
+            get { return items.Length; }
+        }
+
+        public T[] Items
+        {
+            get { return items; }
         }
     }
 }
