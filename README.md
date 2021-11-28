@@ -1,5 +1,5 @@
 # KampIntro
 
 <p>
-Engin Demiroğ "Yazılım Geliştirici Yetiştirme Kampı - Çalışmalarım
+Engin Demiroğ "Yazılım Geliştirici Yetiştirme Kampı C#"
 </p>
