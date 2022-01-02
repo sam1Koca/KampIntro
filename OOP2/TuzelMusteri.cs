@@ -4,17 +4,15 @@ using System.Text;
 
 namespace OOP2
 {
-    //Coorporate : Eng
-    //miras / inheritance     =>Musteride olan herşey TuzelMusteride de vardır / kabul edilir
-    //Müşteri ebevyn
+    //Coorporate Customer
 
-    class TuzelMusteri :Musteri  
+    class TuzelMusteri : Musteri  // TuzelMusteri Bir müşteridir | Miras İnheritance
     {
-
         public string SirketAdi { get; set; }
         public string VergiNo { get; set; }
+
     }
 }
 
 
-//Polymorphısm
+// Musteride olan özellikler Tuzel Musteridede vardır - ortakları atarız! (TuzelMusteri:Musteri)

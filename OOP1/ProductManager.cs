@@ -12,7 +12,7 @@ namespace OOP1
             Console.WriteLine(product.ProductName + " eklendi.");
         }
 
-        // void: diye belirttimiz metotları şu şekilde düşünebiliriz - git günecelle, git sil - bir nevi emir kipi.
+        // void: diye belirttimiz metotları şu şekilde düşünebiliriz - git güncelle, git sil - bir nevi emir kipi.
         // void:Senin bu işlemin sonucunda ne olduğu hakkında extra bir bilgiye ihtiyacın yoksa biz onu void tanımlıyoruz.
         public void Update(Product product)
         {

@@ -6,11 +6,6 @@ namespace OOP3
 {
     class KonutKrediManager : IKrediManager
     {
-        public void BiseyYap()
-        {
-            throw new NotImplementedException();
-        }
-
         public void Hesapla()
         {
             Console.WriteLine("Konut Kredisi Ödeme Planı Hesaplandı");
@@ -19,6 +14,4 @@ namespace OOP3
 }
 
 
-
-// "Implement Interface" Yaptık altına gelen ampül simgesine tıklayarak
-// 
+// İnterface'i İnherit etme sebebimiz:  Bu classın içinde de Hesapla() olsun  *ayrı ayrı yazmaya gerek yok

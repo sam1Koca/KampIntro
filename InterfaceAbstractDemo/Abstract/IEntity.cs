@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OOP3
+namespace InterfaceAbstractDemo.Abstract
 {
-    interface ILoggerService
+    interface IEntity
     {
-        void Log();
+
     }
 }

@@ -2,47 +2,58 @@
 
 namespace OOP2
 {
-    class Program  // *Eğer senin base Classın varsa o base class referans tutucudur -Message
+    class Program   //Inheritance Learning :=)
     {
         static void Main(string[] args)
         {
-            //Mark Zuckerberg
-
+            //Bill Gates
             GercekMusteri musteri1 = new GercekMusteri();
             musteri1.Id = 1;
-            musteri1.MusteriNo = "1212121";
-            musteri1.Adi = "Mark";
-            musteri1.Soyadi = "Zuckerberg";
-            musteri1.TcNo = "1212323232";
+            musteri1.MusteriNo = "127001";
+            musteri1.Adi = "Bill";
+            musteri1.Soyadi = "Gates";
+            musteri1.TcNo = "133765992";
 
 
 
-
-            //Metaverse
-
+            //Microsoft
             TuzelMusteri musteri2 = new TuzelMusteri();
             musteri2.Id = 2;
-            musteri2.MusteriNo = "56565656";
-            musteri2.SirketAdi = "Metaverse";
-            musteri2.VergiNo = "12797198";
+            musteri2.MusteriNo = "127002";
+            musteri2.SirketAdi = "Microsoft";
+            musteri2.VergiNo = "2064819";
+
+            // Gerçek - Tüzel 
+            //SOLID : L  = Birbirine benziyor diye Inheritance yapma
 
 
+            Musteri musteri3 = new TuzelMusteri();  
+
+            Musteri musteri4 = new GercekMusteri();
+            //Musteri tipindeki değişken Her ikisinide tutabiliyor
+
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.Add(musteri1);
+            customerManager.Add(musteri2);
 
 
-            // Musteri Classı hem gerçekMusterinin hemde TuzelMusterinin referansını tutabiliyor.
-            Musteri musteri3 = new GercekMusteri();
-            Musteri musteri4 = new TuzelMusteri();
-
-            MusteriManager musteriManager = new MusteriManager();
-            musteriManager.Ekle(musteri1);
-            musteriManager.Ekle(musteri2);  //Buraya musteri3 - 4'ü de yollayabilir metot müşteri tipinde istiyorya hani :)
+            // İnheritance'da Olay Base Class'ta Her ikisinide - Tutabilmesi,İnherit edebilmesi!
 
 
         }
     }
 }
 
-// Gerçek  Müşteri - Tüzel Müşteri
-//SOLID - L     // Birbirine benziyor diye Inheritance yapma
-// Nasıl Ele almalıyız peki? - Üşenmek yerine git ayrı ayrı classları oluştur. /Tuzel /Gercek
-// Yazılan Musteri Classında Şirket Adı var fakat Kişinin şirketi yok. Bu yanlıştır! *HATALI*
+
+// !!! Makalede Bu örnekleri Verebilirsin (Tüzel Müşteri - Gerçek Müşteri örn.)
+
+
+// Eğer bir yerde "new" görürseniz bu bellekteki referans no'su.
+
+
+
+
+/*  MY NOTES!
+ *  Gerçek - Tüzel  *Bunlar birbirine benziyor diye, birbirleri yerine kullanılamaz.
+ *  İmplementasyon : Uygulama.
+ */

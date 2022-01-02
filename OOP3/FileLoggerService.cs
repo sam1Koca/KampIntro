@@ -2,13 +2,11 @@
 
 namespace OOP3
 {
-    class FileLoggerService : ILoggerService 
+    class FileLoggerService : ILoggerService
     {
         public void Log()
         {
-            Console.WriteLine("Dosyaya loglandı");
+            Console.WriteLine("Dosyaya Loglandı!");
         }
     }
 }
-
-// İnterface içinde sadece İmza metotları olur. İçi dolu olamaz
